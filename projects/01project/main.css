@@ -1,0 +1,115 @@
+
+body{
+	background: #003459;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.timer-container{
+	margin-top: 5rem;
+	font-family: sans-serif;
+	padding: 3rem 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 2rem;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	color: #ffff;
+
+	width: 60%;
+	max-width: 350px;
+}
+
+.timer{
+	font-size: 5rem;
+	font-weight: bold;
+}
+
+.timer-btn{
+	width: 50px;
+	height: 50px;
+	margin-left: 1rem;
+	border-radius: 50%;
+	border: none;
+	color: white;
+	background: #8208e6;
+	cursor: pointer;
+
+}
+
+.timer-btn__start{
+	background: #00b84c;
+	
+}
+
+.timer-btn__stop{
+	background: #ff0256;
+	display: none;
+}
+
+.timer-btn__reset{
+	background: #4169e1;
+}
+
+
+.buttons{
+	padding-top: 2rem;
+}
+
+.set-time{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 2rem;
+}
+
+.time-heading{
+	font-size: 2rem;
+}
+
+.inputs{
+	border: 0.5px solid #fff;
+	border-radius: 11px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	margin-left: 1rem;
+	background: #003459;
+}
+
+input{
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	text-align: center;
+	outline: none;
+	border: none;
+	font-size: 1.6rem;
+	padding: 0 1rem;
+	background: #003459;
+	border-radius: 11px;
+	color: #fff;
+}
+
+.sec{
+	border-left: none;
+}
+
+.min{
+	border-right: none;
+}
+
+
+@media(max-width: 600px){
+	.time-heading{
+		font-size: 1.6rem;
+		text-align: center;
+	}
+}

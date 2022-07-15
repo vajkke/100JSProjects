@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project #1 - Countdown Timer</title>
+	<link rel="icon" href="../../img/logo.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="timer-container">
+		<div class="countdown">
+		<span class="timer timer-minutes">00</span>
+		<span class="timer">:</span>
+		<span class="timer timer-seconds">00</span>
+		</div>
+
+		<div class="buttons">
+			<button type="button" class="timer-btn timer-btn__control timer-btn__start">
+				<span class="material-icons">play_arrow</span>
+			</button>
+
+			<button type="button" class="timer-btn timer-btn__stop">
+				<span class="material-icons">pause</span>
+			</button>
+
+			<button type="button" class="timer-btn timer-btn__reset">
+				<span class="material-icons">restart_alt</span>
+			</button>
+			<button type="button" class="timer-btn timer-btn__set-time">
+				<span class="material-icons">timer</span>
+			</button>
+		</div>
+		<div class="set-time">
+			<h2 class="time-heading">
+				Set time:
+				</h2>
+				<div class="inputs">
+				<input type="text" class="min" maxlength="2">
+				:
+				<input type="text" class="sec" maxlength="2">
+				</div> 
+		</div>
+	</div>
+	
+	
+	<script src="script.js"></script>
+
+</body>
+</html>
