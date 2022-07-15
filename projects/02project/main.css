@@ -1,0 +1,213 @@
+body{
+	background: #003459;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	cursor: url('./img/cursor.svg'), auto;
+
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;	
+}
+
+
+
+.info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #ffff;
+	font-family: monospace;
+	border: 1px solid #fff;
+	padding: 2rem 1rem;
+	width: 40%;
+	text-align: center;
+}
+
+.heading{
+	font-size: 2rem;
+}
+
+.info-text{
+	font-size: 1.2rem;
+}
+
+.balloon-container {
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.balloon {
+	position:absolute;
+	bottom: -120px;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	animation: move 10s linear;
+	
+}
+
+.balloon1{
+	background-color: #36213E;
+	animation-delay: 5s;
+}
+
+.balloon2{
+	left:63%;
+	animation-delay: 11s;
+	background-color: #8D98A7;
+}
+
+.balloon3{
+	right: 30%;
+	animation-delay: 30s;
+	background-color: #77ACA2;
+}
+
+.balloon4{
+	left: 45%;
+	animation-delay: 28s;
+	background-color: #9DBEBB;
+}
+
+.balloon5{
+	right: 5%;
+	animation-delay: 18s;
+	background-color: #6B0F1A;
+}
+
+
+.balloon6{
+	left: 79%;
+	animation-delay: 10s;
+	background-color: #3454D1
+}
+
+.balloon7{
+	right: 64%;
+	animation-delay: 1s;
+	background-color: #DDCA7D;
+}
+
+
+.balloon8{
+	left: 20%;
+	animation-delay: 17s;
+	background-color: #F78764;
+}
+
+.balloon9{
+	right: 36%;
+	animation-delay: 31s;
+	background-color: #1F1300;
+}
+
+
+.balloon10{
+	left: 43%;
+	animation-delay: 27s;
+	background-color: #285943;
+}
+
+
+
+.balloon11{
+	left:67%;
+	animation-delay: 19s;
+	background-color: #FFB8D1;
+}
+
+.balloon12{
+	right: 13%;
+	animation-delay: 28s;
+	background-color: #DFF8EB;
+}
+
+.balloon13{
+	left: 70%;
+	animation-delay: 25s;
+	background-color: #361134;
+}
+
+.balloon14{
+	right: 69%;
+	animation-delay: 15s;
+	background-color: #2E2532;
+}
+
+
+.balloon15{
+	left: 37%;
+	animation-delay: 17s;
+	background-color: #1F271B;
+}
+
+.balloon16{
+	right: 80%;
+	animation-delay: 16s;
+	background-color: #4A5899;
+}
+
+
+.balloon17{
+	left: 91%;
+	animation-delay: 7s;
+	background-color: #92374D;
+}
+
+.balloon18{
+	right: 9%;
+	animation-delay: 31s;
+	background-color: #F7B538;
+}
+
+
+.balloon19{
+	left: 42%;
+	animation-delay: 30s;
+	background-color: #3F88C5;
+}
+
+.balloon20{
+	left: 73%;
+	animation-delay: 42s;
+	background-color: #050404;
+}
+
+
+
+
+
+@keyframes move {
+	0% {
+		bottom: -120px;
+	}
+	100% {
+		bottom: 100%;
+	}
+}
+
+
+
+@media(max-width: 800px){
+	.info{
+		width: 80%;
+
+	}
+	.heading{
+		font-size: 1.5rem;
+	}
+	.info-text{
+		font-size: 0.8rem;
+	}
+}
