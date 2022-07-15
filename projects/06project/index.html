@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>#6 Project - Budgeting App</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="icon" href="../../img/logo.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<section class="app-container">
+		<h1 class="budget-app">Budget App</h1>
+		<div class="budget-and-expenses">
+			<div class="budget-container">
+				<h3 class="heading-budget">Enter your budget</h3>
+				<form class="budget-form">
+					<input type="number" class="budget-input">
+					<input type='submit' class="enter-budget button" value='enter'>
+				</form>
+			</div>
+			<div class="expenses-container">
+				<div class="expenses-name--container">
+					<h3 class="heading-expense">Enter your expense</h3>
+					<input type="text" class="expense-name--input">
+				</div>
+				<div class="expenses-cost--container">
+					<h3 class="heading-expense--amount">Enter the cost of expense</h3>
+					<form class="expense-form">
+						<input type="number" class="expense-cost--input">
+						<input type='submit' class="enter-expense button" value="enter">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="money-display--container">
+			<div class="budget-display--container">
+
+				<h2 class="budget-display--heading">
+					<span class="material-icons">payments</span>
+					BUDGET
+				</h2>
+				<h2 class="budget">$ <span class="budget-display">0</span></h2>
+			</div>
+			<div class="expenses-display--container">
+				<h2 class="expenses-display--heading">
+					<span class="material-icons">payment</span>
+					EXPENSES
+				</h2>
+				<h2 class="expenses">$ <span class="expenses-display">0</span></h2>
+			</div>
+			<div class="balance-display--container">
+				<h2 class="balance-display--heading">
+					<span class="material-icons">paid</span>
+					BALANCE
+				</h2>
+				<h2 class="balance">$ <span class="balance-display">0</span></h2>
+			</div>	
+		</div>
+
+		<div class="expenses-history--container">
+			<div class="expenseTitle-container">
+				<h3 class="expense-title">Expense Title</h3>
+				<ul class="expenses-name-list">
+					
+				</ul>
+			</div>
+			<div class="expenseCost-container">
+				<h3 class="expense-cost">Expense Cost</h3>
+				<ul class="expenses-cost-list">
+					
+				</ul>
+			</div>
+		</div>
+
+		<div class="error-message-budget">
+			<p>Number can not be lower than zero or zero</p>
+		</div>
+		<div class="error-message-expenses">
+			<p>Number can not be lower than zero or zero</p>
+		</div>
+
+	</section>
+	
+	<script src="script.js"></script>
+</body>
+</html>

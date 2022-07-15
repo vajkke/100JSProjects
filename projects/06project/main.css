@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	font-family: 'Roboto', sans-serif;
+	color: #2D2C2D;
+	background: ;
+}
+
+.app-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+	width: 100%;
+	max-width: 600px;
+	border: 3px solid blue;
+	padding: 2rem;
+	position: relative;
+}
+
+.budget-app{
+	font-size: 2.5rem;
+	font-style: italic;
+}
+
+
+h3{
+	font-weight: 400;
+	font-size: 1.1rem;
+}
+
+h2{
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+
+/*first part of app*/
+
+.budget-and-expenses{
+	display: flex;
+	align-items: center;
+	padding: 2rem 0;
+}
+
+.budget-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid green;
+	width: 100%;
+	max-width: 350px;
+	height: 230px;
+	margin-right: 1rem;
+	position: relative;
+	padding:2rem 1.5rem;
+	
+}
+
+.expenses-container{
+	border: 2px solid red;
+	width: 100%;
+	max-width: 350px;
+	 
+	height: 230px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-left: 1rem;
+	padding: 2rem 1.5rem;
+	position: relative;
+}
+
+
+input{
+	margin-top: 0.7rem;
+	margin-bottom: 1.5rem;
+	border: none;
+	padding: 0.3rem 0;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.button{
+	position: absolute;
+	bottom: -9%;
+	border: none;
+	width: 60px;
+	padding: 3px 0;
+	background: none;
+	cursor: pointer;
+	right: 37%;
+}
+
+.enter-budget{
+	border: 1px solid green;
+	color: green;
+}
+
+.enter-budget:hover,
+.enter-budget:active{
+	color: #ffff;
+	background: green;
+}
+
+
+.enter-expense{
+	border: 1px solid red;
+	color: red;
+
+}
+
+.enter-expense:hover,
+.enter-budget:active{
+	color: #ffff;
+	background: red;
+}
+
+
+.budget-input{
+	border: 1px solid green;
+}
+
+
+
+.expense-name--input{
+	border: 1px solid red;
+}
+
+.expense-cost--input{
+	border: 1px solid red;
+}
+
+
+.heading-expense--amount{
+	font-size: 1.1rem;
+}
+
+
+
+
+
+
+/*second part of app*/
+
+
+.money-display--container{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 0;
+	width: 90%;
+}
+
+
+.budget-display--heading{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+
+.expenses-display--heading{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.balance-display--heading{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1rem;	
+}
+
+
+
+
+
+.material-icons{
+	font-size: 3rem !important;
+	margin-bottom: 1rem;
+}
+
+
+.budget{
+	color: green;
+}
+
+.expenses{
+	color: red;
+}
+
+.balance{
+	color: blue;
+}
+
+
+
+
+
+
+/*third part of app*/
+
+
+.expenses-history--container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	padding: 2rem 0;
+}
+
+
+.expenseTitle-container{
+
+
+}
+
+
+ul{
+	list-style: none;
+	color: red;
+	font-size: 1rem;
+}
+
+li{
+	margin-top: 1rem;
+	text-align: center;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+/*error messages*/
+
+.error-message-budget,
+.error-message-expenses{
+	position: absolute;
+	background: red;
+	color: #ffff;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+
+	display: none;
+}
+
+.error-message-budget{
+		left: -17.5%;
+		top: 25%;
+}
+
+
+.error-message-expenses{
+	right: -17.5%;
+	top: 34%;
+}
+
+
+.expense-cost-list{
+	position: relative;
+
+}
+
+.delete{
+	font-size: 1.3rem !important;
+	position: absolute;
+	right: -60%;
+	cursor: pointer;
+}
+
+
+@media(max-width: 650px){
+
+	.app-container{
+		border: none;
+		padding-top: 0;
+	}
+	.budget-and-expenses{
+		flex-direction: column;
+	}
+	.budget-container{
+		margin-right: 0;
+		flex-direction: row;
+		height: auto;
+		margin-bottom: 1rem;
+		padding: 3rem 2rem;
+	}
+	.expenses-container{
+		margin-left: 0;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 2.5rem 2rem;
+	}
+
+	.expenses-name--container{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.expenses-cost--container{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 1rem;
+
+	}
+
+	h3{
+		font-size: 1rem;
+	}
+
+	input{
+		font-size: 0.8rem;
+		margin-bottom: 0;
+		margin-top: 0;
+		text-align: left;
+		padding-left: 0.2rem;
+	}
+
+	.budget-input{
+		margin-left: 0.5rem;
+	}
+
+	.button{
+		bottom: 3%;
+		text-align: center;
+	}
+
+	.money-display--container{
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.budget-display--heading,
+	.expenses-display--heading,
+	.balance-display--heading{
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 0;
+	}
+
+	.budget-display--container,
+	.expenses-display--container,
+	.balance-display--container{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.material-icons{
+		margin-bottom: 0;
+	}
+
+	.budget,
+	.expenses,
+	.balance{
+		position: absolute;
+		font-size: 1.3rem;
+		right: 30%;
+	}
+	
+
+}
