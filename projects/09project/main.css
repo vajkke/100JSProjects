@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #003459;
+	color: #fefffe;
+	font-family: 'Muli', sans-serif;
+}
+
+.app{
+	margin-top: 7rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.heading{
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.metrics{
+	list-style: none;
+}
+
+.metrics >li {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+	font-size: 1.4rem;
+}
+
+.metrics >li >input{
+	margin-left: 2rem;
+	border: none;
+	outline: none;
+	font-size: 1.4rem;
+	width: 150px;
+	padding-left: 0.7rem;
+}
+
+
+.converter-and-swithcer{
+	margin: 3rem 0;
+	display: flex;
+	align-items: center;
+
+}
+
+.converter{
+	border: none;
+	padding: 0.7rem;
+	border-radius: 11px;
+	cursor: pointer;
+	color: #003459;
+}
+
+.switcher{
+	border: none;
+	cursor: pointer;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	margin-left: 2rem;
+	background: #D81E5B;
+	color: #fefffe;
+	transition: background 1.2s;
+}
+
+
+.switcher:hover,
+.switcher:active{
+	color: #D81E5B;
+	background: #fefffe;
+	transition: 1.2s;
+}
+
+.converter:hover,
+.converter:active{
+	opacity: 0.7;
+}
+
+
+.result{
+	font-size: 2.5rem;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cm{
+	margin: 2.3rem 0 !important;
+}
+
+.hidden{
+	display: none !important;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
