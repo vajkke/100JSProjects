@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+
+body{
+	background: #003459;
+	color: #ffff;
+	font-family: monospace;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-nav{
+	padding: 2rem;
+	text-align: center;
+	font-size: 2rem;
+	border-bottom: 2px solid #ffff;
+}
+
+.about-me{
+	padding-top: 4rem;
+	padding-bottom: 6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.about-me__text{
+	width: 85%;
+	font-size: 1.4rem;
+	text-align: center;
+	line-height: 1.4;
+	
+}
+
+.read-more,
+.close{
+	cursor: pointer;
+	border-bottom: 1px solid #fff;
+	display: none;
+}
+
+
+
+
+.challenge-selections{
+	display: flex;
+	overflow-x: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+
+.hidden{
+	display: none;
+}
+
+
+
+
+h3{
+	margin-top: 1rem;
+	cursor: pointer;
+	font-weight: 700;
+
+}
+
+h3:hover,
+h3:active{
+	opacity: 0.7;
+	border-bottom: 1px solid #00171F;
+}
+
+
+.buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+button{
+	cursor: pointer;
+	min-width: 120px; 
+	height: 40px;
+	border-radius: 11px;
+	border: none;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+	transition: background 800ms;
+	background: #00171F;
+	color: #ffff;
+	font-weight: 700;
+}
+
+button:hover,
+button:active{
+	background: #ffff;
+	transition: 800ms;
+	color: #00171F;
+}
+
+.buttonActive{
+	background: #ffff;
+	color: #00171F;
+}
+
+
+
+/*POP UP FOR MOBILE*/
+
+
+.pop-up{
+	display: none;
+}
+
+
+.exit-modal{
+	font-size: 1.2rem;
+	font-weight: 900;
+	position: absolute;
+	top: 0.5%;
+	right: 2%;
+}
+
+
+.effect{
+	opacity: 0.7;
+	filter: blur(5px);
+}
+
+
+
+/*PROJECT AREA*/
+
+
+
+.showcase{
+	padding: 6rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+}
+
+
+
+.hiddenProject{
+	display: none;
+}
+
+
+.project{
+	margin:0 1.5rem;
+	margin-bottom: 3rem;
+	width: 500px;
+}
+
+
+.project-heading{
+	font-size: 1.5rem;
+}
+
+
+
+
+.project-photo{
+	border: 2px solid #ffff;
+	border-radius: 15px;
+	margin-top: 1rem;
+	width: 100%;
+	max-width: 800px;
+}
+
+
+.check-project,
+.check-project>h2{
+	border: none;
+	text-decoration: none;
+	color: #ffff;
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	transition: color 800ms;
+}
+
+.check-project>h2:hover,
+.check-project>h2:active{
+	color: #00171F;
+	transition: 800ms;
+}
+
+.check-project:hover,
+.check-project:active{
+	opacity: 0.5;
+}
+
+
+
+@media(max-width: 800px){
+	.read-more,
+	.close{
+		display: inline-block;
+	}
+	.about-me__bottom{
+		display: none;
+	}
+
+	.pop-up{
+		position: relative;
+		margin-top: 1rem;
+		padding: 2rem 0;
+		padding-top: 3rem;
+		width: 100%;
+		max-width: 350px;
+		overflow-x: auto;
+		display: none;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 16px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		
+	}
+}
+
+
+@media(max-width: 700px){
+	.project-heading{
+		font-size: 2rem;
+	}
+}
+
+
+@media(max-width: 867px) and (min-width: 800px){
+	.days20,
+	.days40,
+	.days60,
+	.days80,
+	.days100{
+		width: 80%;
+	}
+}
+
+@media(max-width: 925px) and (min-width: 867px){
+	.days20,
+	.days40,
+	.days60,
+	.days80,
+	.days100{
+		width: 75%;
+	}
+}
+
+@media(max-width: 990px) and (min-width: 925px){
+	.days20,
+	.days40,
+	.days60,
+	.days80,
+	.days100{
+		width: 70%;
+	}
+}
+
+@media(max-width: 1065px) and (min-width: 990px){
+	.days20,
+	.days40,
+	.days60,
+	.days80,
+	.days100{
+		width: 65%;
+	}
+}
+
+@media(max-width: 1155px) and (min-width: 1065px){
+	.days20,
+	.days40,
+	.days60,
+	.days80,
+	.days100{
+		width: 60%;
+	}
+}
+
+@media(max-width: 1270px) and (min-width: 1155px){
+	.days20,
+	.days40,
+	.days60,
+	.days80,
+	.days100{
+		width: 55%;
+	}
+}
+
+
+
+@media(max-width: 600px){
+	.heading{
+		font-size: 2rem;
+	}
+	button{
+		margin-left: 0;
+	}
+	.day17,
+	.day18,
+	.day19,
+	.day20{
+		display: none;
+	}
+
+}
