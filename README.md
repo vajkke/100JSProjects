@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/zF7cRSf/template.jpg)
+![Logo](https://i.ibb.co/C19qdCT/template.jpg)
 
 ## [Link of the website](https://vajkke.github.io/100daysCHALLENGE/) 
 
